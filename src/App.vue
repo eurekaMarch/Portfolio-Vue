@@ -1,47 +1,33 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Sidebar from "./components/Sidebar.vue";
+import Home from "./components/Home/Home.vue";
+import About from "./components/About.vue";
+import Services from "./components/Services.vue";
+import Resume from "./components/Resume/Resume.vue";
+import Portfolio from "./components/Portfolio.vue";
+import Pricing from "./components/Pricing.vue";
+import Testimonials from "./components/Testimonials.vue";
+import Blog from "./components/Blog.vue";
+import Contact from "./components/Contact.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
+  <Sidebar />
   <main>
-    <TheWelcome />
+    <Home id="home" />
+    <About id="about" />
+    <Services id="services" />
+    <Resume id="resume" />
+    <Portfolio id="portfolio" />
+    <Pricing id="pricing" />
+    <Testimonials id="testimonials" />
+    <Blog id="blog" />
+    <Contact id="contact" />
   </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+main {
+  margin-left: 110px;
 }
 </style>
