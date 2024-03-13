@@ -14,15 +14,15 @@ import Contact from "./components/Contact.vue";
 <template>
   <Sidebar />
   <main>
-    <Home id="home" />
-    <About id="about" />
-    <Services id="services" />
-    <Resume id="resume" />
-    <Portfolio id="portfolio" />
-    <Pricing id="pricing" />
-    <Testimonials id="testimonials" />
-    <Blog id="blog" />
-    <Contact id="contact" />
+    <Home />
+    <About />
+    <Services />
+    <Resume />
+    <Portfolio />
+    <Pricing />
+    <Testimonials />
+    <Blog />
+    <Contact />
   </main>
 </template>
 

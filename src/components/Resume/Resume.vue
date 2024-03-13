@@ -3,6 +3,8 @@ Resume
   <div>Resume</div>
 </template>
 
-<script setup></script>
+<script setup>
+import Card from "./Card.vue";
+</script>
 
 <style scoped></style>
